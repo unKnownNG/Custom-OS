@@ -15,7 +15,6 @@ A small hobby operating system I'm building from scratch. This repository contai
 - Kernel: Early-stage. Skeleton kernel sources and linker scripts present (C + Linker Script).
 - Build system: Makefiles for assembling, linking and producing a bootable image.
 
-> If anything below is inaccurate, please edit this README or open an issue with details.
 
 ## Repository layout (recommended)
 
@@ -26,7 +25,6 @@ A small hobby operating system I'm building from scratch. This repository contai
 - /tools/         - Helper scripts (mkimg, build helpers)
 - Makefile        - Top-level build script
 
-Adjust these paths if your repository differs.
 
 ## Prerequisites
 
