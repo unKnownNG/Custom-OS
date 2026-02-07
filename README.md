@@ -95,15 +95,8 @@ Contributions welcome. For substantial changes, please open an issue first to di
 - Create a feature branch
 - Open a pull request with a clear description and tests/steps to reproduce
 
-## License
-
-Add a LICENSE file to state your project's license. If you haven't chosen one yet, consider using the MIT or BSD license for small hobby projects.
 
 ## Contact
 
 If you want help or to collaborate, open an issue or reach out via the contact information in your GitHub profile.
 
----
-
-Notes:
-- This README is intentionally generic to match the repository structure commonly used in OS-from-scratch projects. Replace placeholders (paths, targets, and commands) with exact values from your repo if they differ.
