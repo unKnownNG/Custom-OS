@@ -5,7 +5,8 @@ CODE_OFFSET equ 0x8
 DATA_OFFSET equ 0x10
 
 KERNEL_LOAD_SEG equ 0x1000
-KERNEL_START_ADDR equ 0x100000
+KERNEL_START_ADDR equ 0x10000
+
 
 start:
     cli
@@ -18,14 +19,18 @@ start:
 
 
 ;Load kernel
-mov bx, KERNEL_LOAD_SEG
-mov dh, 0x00
-mov dl, 0x80
-mov cl, 0x02
-mov ch, 0x00
+mov ax, KERNEL_LOAD_SEG
+mov es, ax
+xor bx, bx        ; offset 0x0000
+
 mov ah, 0x02
 mov al, 8
+mov ch, 0x00
+mov cl, 0x02
+mov dh, 0x00
+mov dl, 0x80
 int 0x13
+
 
 jc disk_read_error
 

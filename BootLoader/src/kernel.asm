@@ -1,10 +1,12 @@
 [BITS 32]
-
 global _start
 extern kernel_main
 
 _start:
+    mov esp, 0x9C00     ; SAFE STACK
     call kernel_main
-    jmp$
 
-times 512-($ - $$) db 0
+.hang:
+    cli
+    hlt
+    jmp .hang
